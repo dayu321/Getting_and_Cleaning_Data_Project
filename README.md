@@ -8,9 +8,9 @@ getwd() will give you current working directory
 setwd("target_working_directory")  will change to working directory between ""
 
 2, Run the script in Rstudio or R then you have 6 tidy data in your workspace for the next step use:
-total : The from origin data, and its colomns have been well modified.
-total_mean_std : The extracted mean and std from origin data, and its colomns have been well modified.
-total_with_label : The origin data with label indicates from who the data came from in case you will need to identify who the result came from.
+total : target tidy data. modified from origin data, and its colomns have been well named.
+total_mean_std : The extracted mean and std from origin data, and its colomns have been well named.
+total_with_label : The origin data with label indicates from who the data came from in case you will need to identify who the result was came from.
 
 total_mean : independent tidy data set w ith the average of each variable for each activity and each subject. For personal uncertainly about the meaning of requirement 5, I also gave another 2 total_mean version in order to include the satisfying answer.
 total_colmeans : The mean value for each colomun in total data.
