@@ -52,11 +52,17 @@ names(total) <- features_name
 
 total_mean_std <- total[, total_mean_std_cols]
 total_mean <- total[, total_mean_cols]
+total_colmeans <- colMeans(total) # in order not to misunderstand the requirement
+total_rowmeans <- rowMeans(total) # in order not to misunderstand the requirement
+
 total_with_label <- cbind(label$V1, total)
 names(total_with_label)[1] <- "The number of the Person where Data came from"
 
 
 write.table(total_mean, file = "tidy_data-total_mean.txt")
+write.table(total_colmeans, file = "tidy_data-total_colmeans.txt")
+write.table(total_rowmeans, file = "tidy_data-total_rowmeans.txt")
+
 write.table(total_mean_std, file = "tidy_data-total_mean_std.txt")
 write.table(total_with_label, file = "tidy_data-total_with_label.txt")
 write.table(total, file = "tidy_data-total.txt")
