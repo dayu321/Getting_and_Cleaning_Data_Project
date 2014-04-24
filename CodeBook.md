@@ -4,13 +4,22 @@ The User Guide of this script is in README.md
 This CodeBook describles the result tidy data given by the script
 
 
-After running the script, you will get 3 tidy data:
+After running the script, you will get 6 tidy data:
 total : The from origin data, and its colomns have been well modified.
 total_mean_std : The extracted mean and std from origin data, and its colomns have been well modified.
 total_with_label : The origin data with label indicates from who the data came from in case you will need to identify who the result came from.
+total_mean : independent tidy data set w ith the average of each variable for each activity and each subject. For personal uncertainly about the meaning of requirement 5, I also gave another 2 total_mean version in order to include the satisfying answer.
+total_colmeans : The mean value for each colomun in total data.
+total_rowmeans : The mean value for each row in total data.
 
-total_with_label are total with an additional colomn in its first colomn given the person number where the data came from, in case you will need it.
-This data are just to provide a convenience in data analysis and main part are the same with the original tidy data "total", because of that, we just give the detailed information about tidy data total and total_mean_std.
+
+total_with_label are total with an additional colomn in its first colomn 
+given the person number where the data came from, in case you will need it.
+This data are just to provide a convenience in data analysis and 
+main part are the same with the original tidy data "total".
+total_mean and total_colmeans shares the same CodeBook of total, and
+total_rowmeans has no CodeBook.
+because of that, we just give the detailed information about tidy data total and total_mean_std.
 
 
 The CodeBook of total_mean_std:
